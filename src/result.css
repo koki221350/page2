@@ -1,0 +1,27 @@
+.score {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+  margin: 36px 120px 49px 120px;
+  display: flex;
+}
+
+.item {
+  margin: 13px 20px 30px 20px;
+  display: flex;
+  border-radius: 15px; /* 角を丸くする */
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.image-box {
+  padding: 25px 17px;
+  float: left;
+  /* 画像からの間隔を設定 */
+}
+
+.description-box {
+  float: left;
+  padding: 27px 22px 25px 18px;
+}
+/* 説明文からの間隔を設定 */
