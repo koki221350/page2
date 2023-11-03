@@ -1,4 +1,4 @@
 .codesandbox
-build/
+build
 node_modules
-public/
+public
