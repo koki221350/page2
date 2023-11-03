@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Products = (props) => {
+const Products = (props) => {
   return (
     <>
       <div className="products">Related Products</div>

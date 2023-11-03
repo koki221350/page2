@@ -1,11 +1,11 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 
-export const SearchMore = () => {
+const SearchMore = ({ setgotoNext }) => {
   return (
     <>
-      <div className="searchmore">Search More!</div>
-      <SearchBar />
+      {/* <div className="searchmore">Search More!</div> */}
+      <SearchBar setgotoNext={setgotoNext} />
     </>
   );
 };

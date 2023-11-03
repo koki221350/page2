@@ -1,1 +1,4 @@
+.codesandbox
+build/
 node_modules
+public/

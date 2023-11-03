@@ -1,0 +1,31 @@
+.character {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.character-item {
+  display: inline-block;
+}
+
+.character-item-wrapper {
+  animation: scrollAnimation 25s linear infinite;
+  display: inline-flex;
+}
+
+.character-image {
+  width: 25vh;
+  height: 25vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,51 +1,28 @@
 import React from "react";
+import "../style/result.css";
 
-export const Result = () => {
+const Result = ({ result, setresult }) => {
+  const result_panel = (animal, img_src, score, explain) => {
+    return (
+      <div className="item" key={animal}>
+        <div className="image-box">
+          <img src={img_src} alt="penguinimg2" className="animal-img" />
+        </div>
+
+        <div className="description-box">
+          <div className="each-score">{score}</div>
+          <div className="explain">{explain}</div>
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="result">
-      <div className="score"></div>
+      <div className="resulttitle">Result</div>
       <div className="container">
-        <div className="item">
-          <div className="image-box">
-            <img src="キャラ真ん中2.png" alt="penguinimg2" />
-          </div>
-
-          <div className="description-box">
-            <div className="each-score">7</div>
-            <div className="explain">
-              nibh mi, posuere quis dui ut, laoreet accumsan mi. Maecenas auctor
-              ut est eu
-            </div>
-          </div>
-        </div>
-
-        <div className="item">
-          <div className="image-box">
-            <img src="キャラ真ん中2.png" alt="penguinimg2" />
-          </div>
-
-          <div className="description-box">
-            <div className="each-score">7</div>
-            <div className="explain">
-              nibh mi, posuere quis dui ut, laoreet accumsan mi. Maecenas auctor
-              ut est eu
-            </div>
-          </div>
-        </div>
-
-        <div className="item">
-          <div className="image-box">
-            <img src="キャラ真ん中2.png" alt="penguinimg2" />
-          </div>
-
-          <div className="description-box">
-            <div className="each-score">7</div>
-            <div className="explain">
-              nibh mi, posuere quis dui ut, laoreet accumsan mi. Maecenas auctor
-              ut est eu
-            </div>
-          </div>
-        </div>
+        {result.map((item, index) =>
+          result_panel(item.animal, item.img_src, item.score, item.explain)
+        )}
       </div>
     </div>
   );

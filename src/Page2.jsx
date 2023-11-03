@@ -12,11 +12,9 @@ import SearchMore from "./components/SearchMore";
 export const Page2 = () => {
   return (
     <>
-      <Header />
       <Result />
       <Products message="ポテトチップス" />
       <SearchMore />
-      <Footer />
     </>
   );
 };

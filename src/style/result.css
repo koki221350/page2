@@ -1,9 +1,25 @@
+.resulttitle {
+  margin-top: 7vh;
+  margin-bottom: 1vh;
+  padding: 0;
+  width: 100%;
+
+  color: #6ba3f8;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.animal-img {
+  width: 144px;
+}
 .score {
-  width: 150px;
+  width: 100%;
   height: 150px;
   flex-shrink: 0;
   background: #d9d9d9;
-  margin: 36px 120px 49px 120px;
   display: flex;
 }
 
